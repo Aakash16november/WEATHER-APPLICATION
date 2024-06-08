@@ -1,13 +1,47 @@
-/* src/App.css */
+/* Base styles */
 .App {
-    position: relative;
-    z-index: 1; /* Ensure the content is above the video */
-    color: white;
-    padding: 20px;
+  position: relative;
+  z-index: 1; /* Ensure the content is above the video */
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .App {
+    padding: 15px; /* Reduce padding on tablets */
   }
-  
+
   .content {
-    position: relative;
-    z-index: 1;
+    padding: 10px; /* Adjust padding if necessary */
   }
-  
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px; /* Further reduce padding on mobile devices */
+  }
+
+  .content {
+    padding: 5px; /* Adjust padding if necessary */
+  }
+}
+
+/* Additional fine-tuning for very small devices */
+@media (max-width: 480px) {
+  .App {
+    padding: 5px; /* Minimal padding for very small devices */
+    font-size: 14px; /* Adjust font size for readability */
+  }
+
+  .content {
+    padding: 5px; /* Ensure consistent padding */
+    font-size: 14px; /* Adjust font size for readability */
+  }
+}
