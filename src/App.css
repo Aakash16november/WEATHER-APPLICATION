@@ -1,0 +1,13 @@
+/* src/App.css */
+.App {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the video */
+    color: white;
+    padding: 20px;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+  

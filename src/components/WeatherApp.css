@@ -1,0 +1,9 @@
+.cont{
+   display: flex;
+   gap: 10rem;
+}
+.cont1{
+    margin-top: 5rem;
+    margin-left: 3rem;
+ 
+}
