@@ -69,12 +69,12 @@ const WeatherApp = () => {
         </div>
       </nav>
 
-      <div style={{ display: "flex" }}>
+      <div className='parent'>
         <div className="cont">
           {error && <p style={{ color: 'red' }}>{error}</p>}
           {weather && (
             <div className="cont1">
-              <div style={{ display: "flex" }}>
+              <div className='cont2' style={{ display: "flex" }}>
                 <h1>{weather.name}</h1>
                 <i
                   className="fa-solid fa-location-dot"
@@ -89,15 +89,15 @@ const WeatherApp = () => {
             </div>
           )}
         </div>
-        <div style={{ marginLeft: "10rem", marginTop: "5rem" }}>
+        <div className='boxInfo'>
           {weather && (
             <>
-              <div style={{ display: "flex", gap: "10rem" }}>
+              <div className='boxInfo1'>
                 <Box icon={WiDayHaze} content="UV" content1={uvIndex ? `${uvIndex} Moderate` : "Loading..."} />
                 <Box icon={WiThermometer} content="Feels like" content1={`${weather.main.feels_like} °C`} />
                 <Box icon={WiHumidity} content="Humidity" content1={`${weather.main.humidity} %`} />
               </div>
-              <div style={{ display: "flex", gap: "10rem", marginTop: "10rem" }}>
+              <div className='boxInfo1' style={{marginTop: "10rem" }}>
                 <Box icon={WiStrongWind} content="Wind Speed" content1={`${weather.wind.speed} m/s`} />
                 <Box icon={WiWindy} content="Air Pressure" content1={`${weather.main.pressure} hPa`} />
                 <Box icon={FiMeh} content="Visibility" content1={`${weather.visibility / 1000} km`} />
