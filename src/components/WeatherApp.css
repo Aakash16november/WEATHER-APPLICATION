@@ -1,9 +1,74 @@
-.cont{
-   display: flex;
-   gap: 10rem;
-}
-.cont1{
+/* Base styles */
+.cont {
+    display: flex;
+    gap: 10rem;
+  }
+  .cont1 {
     margin-top: 5rem;
     margin-left: 3rem;
- 
-}
+  }
+  .parent{
+    display: flex;
+  }
+  .boxInfo{
+    margin-left: 10rem;
+    margin-top: 5rem;
+  }
+  .boxInfo1{
+     display: flex;
+     gap: 10rem;
+  }
+  
+  /* Responsive styles for tablets and smaller screens */
+  @media (max-width: 1024px) {
+    .cont {
+      gap: 5rem; /* Reduce gap on tablets */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+    }
+    .cont1 {
+      margin-top: 3rem;
+      margin-left: 0; /* Reset left margin */
+    }
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 768px) {
+    .cont {
+      gap: 2rem; /* Further reduce gap on mobile devices */
+      text-align: center;
+    }
+    .cont1 {
+      margin-top: 2rem;
+      margin-left: 0; /* Reset left margin */
+      width: 100%; /* Ensure full width */
+    }
+    .parent{
+        flex-direction: column;
+        gap: 0;
+        margin-left: 0%;
+      }
+      .cont2{
+        margin-left: 9.3rem;
+      }
+    .boxInfo{
+        margin-left: 0rem;
+        
+    }
+    .boxInfo1{
+        display: flex;
+        gap: 3rem;
+        margin-left: 2rem;
+     }
+  }
+  
+  /* Additional fine-tuning for very small devices */
+  @media (max-width: 480px) {
+    .cont {
+      gap: 1rem; /* Minimal gap for very small devices */
+    }
+    .cont1 {
+      margin-top: 1rem; /* Reduce top margin */
+    }
+  }
+  
